@@ -1,4 +1,4 @@
-lass Solution{   
+class Solution{   
 public:
     vector<int> sumClosest(vector<int>arr, int x)
     {
