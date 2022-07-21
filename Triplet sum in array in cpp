@@ -1,5 +1,36 @@
+//Using hash map
+```
 
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int main()
+{
+    int n=6;
+    int a[n]={1,4,6,7,8,9};
+    int x=24;
+    for(int i=0;i<n-1;i++)
+    {
+        unordered_set<int>s;
+        int cs=x-a[i];
+        cout<<"cs"<<cs<<endl;
+        for(int j=i+1;j<n;j++)
+        {
+            if(s.find(cs-a[j])!=s.end())
+            {
+                cout<<a[i]<<" "<<a[j]<<" "<<cs-a[j]<<endl;
+            }
+            s.insert(a[j]);
+            
+        }
+    }
+
+    return 0;
+}
+```
+// by using normal method
+```
 #include <bits/stdc++.h>
 
 using namespace std;
